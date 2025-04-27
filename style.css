@@ -186,3 +186,27 @@ h4{
 .card:hover{
     transform: translateY(-10px);
 }
+
+
+/* ==================SKILLS SECTION============== */
+.skills-section{
+    padding: 2rem 0;
+}
+.top-skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+}
+.skills-bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+    background-color: #d9d9db;
+}
+.skills-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem 0;
+}
