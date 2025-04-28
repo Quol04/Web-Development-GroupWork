@@ -59,7 +59,7 @@ h4{
 /* =========NAVBAR SECTION================ */
     
 .navbar-section{
-    background: #103b29;
+    background-color: #063622;
     padding: 20px 0;
     
 
@@ -100,10 +100,11 @@ h4{
 }
 /* ============HERO SECTION============ */
 .hero-section{
-    background: url(../images/hero-bg.jpg) no-repeat center center/cover;
+    background: url(images/hero.jpeg) no-repeat center center/cover;
     /* margin: 2rem 0; */
     padding: 2rem 0;
     background-color: #063622;
+    background-blend-mode: overlay;
     
    
 }
@@ -111,7 +112,7 @@ h4{
     display:grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: 1rem;
+    gap: 6rem;
 }
 .hero-content{
     color: #fff;
@@ -134,7 +135,17 @@ h4{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
+}
+.about-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-image img{
+    width: 100%;
+    min-height: 80%;
+   
 }
 .about-content{
     padding: 2rem 0;
@@ -153,7 +164,7 @@ h4{
 }
 .about-details span{
     color: #9ea09f;
-    font-weight: 700;
+    /* font-weight: 700; */
 }
 
 
@@ -186,6 +197,17 @@ h4{
 .card:hover{
     transform: translateY(-10px);
 }
+.card i{
+    color:  #11b671;
+    font-size: 40px;
+    margin-bottom: 1rem;
+}
+.services .more-services{
+    text-align: center;
+    padding: 1rem 0;
+    color:  #11b671;
+    cursor: pointer;
+}
 
 
 /* ==================SKILLS SECTION============== */
@@ -196,15 +218,64 @@ h4{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
 }
+.skills-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skills-image img{
+    width: 100%;
+    min-height: 80%;
+}
+.portfolio-cards h4{
+    padding: 1rem 0;
+}
+.portfolio-cards p{
+    padding-top: 5rem ;
+    padding-bottom: 1rem;
+}
+.progress-bar{
+    background: #f2f6f7;
+    border-radius: 25px;
+    height: 6px;
+    margin: 1rem 0;
+    overflow: hidden;
+    
+}
+.progress-ui{
+    width: 85%;
+    background: #109710;
+    height: 100%;
+    border-radius: 25px;
+}
+.progress-tech{
+    width: 90%;
+    background: #109710;
+    height: 100%;
+    border-radius: 25px;
+}
+.progress-design{
+    width: 60%;
+    background: #109710;
+    height: 100%;
+    border-radius: 25px;
+}
+.progress-web{
+    width: 80%;
+    background: #109710;
+    height: 100%;
+    border-radius: 25px;
+}
+
 
 
 
 /* ==========SKILLS BOTTOM SECTION================= */
 .skills-bottom-section{
     background-color: #f2f4f2;
-    padding: 2rem 0;
+    padding-top: 2rem ;
 
 }
 .skills-bottom{
@@ -219,6 +290,24 @@ h4{
     grid-template-columns: 1fr 1fr;
     padding: 2rem 0;
 }
+.skill-card{
+    padding: 2rem;
+   
+}
+.skill-card i{
+    padding: 1rem 0;
+    color: #11b671;
+    font-size: 30px;
+}
+.skills-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skills-image img{
+    width: 100%;
+    min-height: 80%;
+}
 
 
 /* <!-- ====================NUMBERS SECTION ============================ --> */
@@ -231,6 +320,10 @@ h4{
     align-items: center;
     gap: 2rem ;
     padding: 2rem ;
+}
+.number-card h3{
+    /* text-align: center; */
+    padding: 0 1rem;
 }
 
 /* <!-- ============SUCCESS SECTION================== --> */
@@ -247,6 +340,10 @@ h4{
 .success h3{
     text-align: center;
     padding: 2rem 0;
+}
+.success-cards img{
+    width: 100%;
+    min-height: 80%;
 }
 
 
@@ -266,7 +363,7 @@ h4{
 .footer-section{
     background-color: #103b29;
     padding: 2rem 0;
-    color: #fff;
+    color: #bab9b9;
     margin-top: 4rem;
 }
 .footer-content{
@@ -280,11 +377,21 @@ h4{
     align-items: center;
     padding-top: 3rem ;
 }
+.footer-logo{
+    font-weight: 700;
+    color: #a0c3af;
+    padding-top: 2rem;
+}
 .footer-contacts{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 2rem;
+    padding-top:1rem ;
+}
+.footer-contacts div{
+    display: flex;
+    padding: 1rem;
+    
 }
 .socials{
     display: flex;
@@ -312,4 +419,27 @@ h4{
 .back-to-top:hover{
     background: #1d6346;
 }
+
+
 /* ====================MEDIA QUERIES==================== */
+@media (min-width: 8400px){
+    .container{
+        max-width: 90%;
+    }
+    .hero{
+        grid-template-columns: 1fr;
+    }
+    .about{
+        grid-template-columns: 1fr;
+    }
+    .services{
+        grid-template-columns: 1fr;
+    }
+    .skills-bottom{
+        grid-template-columns: 1fr;
+    }
+    .numbers{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
