@@ -61,8 +61,11 @@ h4{
 .navbar-section{
     background-color: #063622;
     padding: 20px 0;
-    
-
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;  
 }
 .navbar{
     display: flex;
@@ -72,9 +75,18 @@ h4{
 
 }
 .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.logo a{
     font-weight: 700;
-    color: #a0c3af;
-    
+    color: #fff;
 }
 .menu{
     display: flex;
@@ -101,7 +113,7 @@ h4{
 /* ============HERO SECTION============ */
 .hero-section{
     background: url(images/hero.jpeg) no-repeat center center/cover;
-    /* margin: 2rem 0; */
+    margin-top: 5rem ;
     padding-top: 3rem ;
     background-color: #063622;
     background-blend-mode: overlay;
@@ -115,15 +127,19 @@ h4{
     gap: 6rem;
 }
 .hero-content{
-    color: #fff;
-    padding: 2rem 0;
+    color: #fff;   
 }
 .hero-content h1{
+    font-size: 3.8rem;
     font-weight: 700;
     margin: 0.5rem 0;
 }
+.hero-content h3{
+    font-size: 2rem;
+    font-weight: 700;
+}
 .hero-content p{
-    margin: 1rem 0;
+    margin-bottom: 2rem ;
 }
 
 /* ===========ABOUT SECTION========== */
@@ -166,15 +182,12 @@ h4{
 }
 .about-details span{
     color: #9ea09f;
-    /* font-weight: 700; */
 }
 .about-socials{
     display: flex;
-    /* justify-content: space-between; */
     gap: 1rem;
     align-items: center;
     padding-bottom: 2rem ;
-    /* margin-top: 2rem; */
 }
 .about-socials i{
     color: #25b679;
@@ -314,21 +327,25 @@ h4{
 .skills-info{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 2rem 0;
 }
 .skill-card{
-    padding: 2rem;
-   
+    display: flex;
+    gap: 0.5rem;
+    padding: 2rem 1rem;  
 }
 .skill-card i{
-    padding: 1rem 0;
     color: #11b671;
     font-size: 30px;
+}
+
+.skill-icon h3{
+    padding-bottom: 0.5rem ;
 }
 .skills-image{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 0;
 }
 .skills-image img{
     width: 100%;
@@ -348,7 +365,6 @@ h4{
     padding: 2rem ;
 }
 .number-card h3{
-    /* text-align: center; */
     padding: 0 1rem;
 }
 
@@ -360,16 +376,16 @@ h4{
 .success-cards{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    gap: 2rem;
+    /* align-items: center; */
+    gap: 2rem 0;
 }
 .success h3{
     text-align: center;
     padding: 2rem 0;
 }
 .success-cards img{
-    width: 100%;
-    min-height: 80%;
+    width: 245px;
+    max-height: 170px;
 }
 
 
@@ -383,6 +399,12 @@ h4{
     justify-content: space-between;
     align-items: center;
     padding: 2rem 0;
+}
+.partners img{
+    width: 150px;
+    max-height: 150px;
+    border-radius: 50%;
+
 }
 
 /* <!-- ============FOOTER SECTION================== --> */
@@ -404,9 +426,20 @@ h4{
     padding-top: 3rem ;
 }
 .footer-logo{
-    font-weight: 700;
-    color: #a0c3af;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-top: 2rem;
+    gap: 1rem;
+}
+.footer-logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.footer-logo a{
+    color: #fff;
+    font-weight: 700;
 }
 .footer-contacts{
     display: flex;
@@ -442,23 +475,34 @@ h4{
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
+.back-to-top i{
+    font-size: 20px;
+    color: #fff;
+}
 .back-to-top:hover{
     background: #1d6346;
 }
 
 
 /* ====================MEDIA QUERIES==================== */
-@media (min-width: 8400px){
+@media (max-width: 905px){
     .container{
-        max-width: 90%;
+        max-width: 88%;
     }
+    .nav-list{
+        display: none;
+    }
+    
     .hero{
         grid-template-columns: 1fr;
     }
     .about{
         grid-template-columns: 1fr;
     }
-    .services{
+    .service-cards{
+        grid-template-columns: 1fr;
+    }
+    .top-skills{
         grid-template-columns: 1fr;
     }
     .skills-bottom{
@@ -467,5 +511,56 @@ h4{
     .numbers{
         grid-template-columns: 1fr 1fr;
     }
+    .success-cards{
+        grid-template-columns: 1fr 1fr;
+    }
+    .partners{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer-bottom{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer-contacts{
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
     
+}
+@media (max-width: 600px){
+    .container{
+        max-width: 95%;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .nav-list{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+    .hero{
+        grid-template-columns: 1fr;
+    }
+    .about{
+        grid-template-columns: 1fr;
+    }
+    .service-cards{
+        grid-template-columns: 1fr;
+    }
+    .top-skills{
+        grid-template-columns: 1fr;
+    }
+    .skills-bottom{
+        grid-template-columns: 1fr;
+    }       
+    .numbers{
+        grid-template-columns: 1fr 1fr;
+    }
+    .success-cards{
+        grid-template-columns: 1fr;
+    }       
 }
