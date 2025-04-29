@@ -102,7 +102,7 @@ h4{
 .hero-section{
     background: url(images/hero.jpeg) no-repeat center center/cover;
     /* margin: 2rem 0; */
-    padding: 2rem 0;
+    padding-top: 3rem ;
     background-color: #063622;
     background-blend-mode: overlay;
     
@@ -141,11 +141,12 @@ h4{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 2rem 0;
+   
 }
 .about-image img{
     width: 100%;
     min-height: 80%;
-   
 }
 .about-content{
     padding: 2rem 0;
@@ -157,6 +158,7 @@ h4{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    margin: 2rem 0;
 }
 .about-details h5{
     margin-top: 0.8rem;
@@ -165,6 +167,23 @@ h4{
 .about-details span{
     color: #9ea09f;
     /* font-weight: 700; */
+}
+.about-socials{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 1rem;
+    align-items: center;
+    padding-bottom: 2rem ;
+    /* margin-top: 2rem; */
+}
+.about-socials i{
+    color: #25b679;
+    font-size: 20px;
+    cursor: pointer;
+}
+.about-socials i:hover{
+    color: #177652;
+    transition: all 0.3s ease-in-out;
 }
 
 
@@ -193,6 +212,7 @@ h4{
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 .card:hover{
     transform: translateY(-10px);
@@ -200,13 +220,19 @@ h4{
 .card i{
     color:  #11b671;
     font-size: 40px;
-    margin-bottom: 1rem;
+}   
+.card h3{
+    padding: 1rem 0;
 }
 .services .more-services{
     text-align: center;
     padding: 1rem 0;
     color:  #11b671;
     cursor: pointer;
+}
+.services .more-services:hover{
+    color: #176748;
+    transition: all 0.3s ease-in-out;
 }
 
 
