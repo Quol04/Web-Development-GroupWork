@@ -11,6 +11,8 @@
 4. Unicons for icons
 
 ---
+## Demo
+[Live Demo](https://quol04.github.io/Web-Development-GroupWork/)
 
 ## Members
 
