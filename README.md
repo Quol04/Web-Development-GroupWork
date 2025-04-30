@@ -51,20 +51,20 @@ UI-Portfolio/
 
 ---
 ## Features
-Responsive navigation bar with light/dark toggle icons and hamburger menu.
+1. Responsive navigation bar with light/dark toggle icons and hamburger menu.
 
-Hero section with personal intro and call-to-action buttons.
+2. Hero section with personal intro and call-to-action buttons.
 
-About section with bio, contact details, and social media links.
+3. About section with bio, contact details, and social media links.
 
-The services section has three cards showcasing key offerings.
+4. The services section has three cards showcasing key offerings.
 
-Skills section with animated progress bars.
+5. Skills section with animated progress bars.
 
-Highlighted achievements (projects, hours, customers).
+6. Highlighted achievements (projects, hours, customers).
 
-Portfolio gallery showcasing success projects.
+7. Portfolio gallery showcasing success projects.
 
-Partner logo strip.
+8. Partner logo strip.
 
-Footer with contact info, social media links, and back-to-top button
+9. Footer with contact info, social media links, and back-to-top button
