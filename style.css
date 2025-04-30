@@ -55,6 +55,13 @@ h4{
     max-width: 80%;
     margin: 0 auto;
 }
+.dark-mode {
+    background-color: #323232;
+    color: white;
+  }
+  #light-mode {
+    display: none;
+  }
 
 /* =========NAVBAR SECTION================ */
     
